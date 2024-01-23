@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: "lato";
 }
+
 /*image de font du main (placer dans le body)*/
 .fond {
   z-index: -20;
@@ -211,15 +212,16 @@ header {
 
 /*media querry*/
 @media screen and (min-width: 1000px) {
+
   /*cache le menu telephone si le media querry est passé*/
   .headertel {
     display: none;
   }
-  
+
   .cache {
     display: none;
   }
-  
+
   /*affiche le menu ordinateur si le media querry est passé*/
   .headerpc {
     display: flex;
@@ -227,6 +229,7 @@ header {
     justify-content: space-around;
     align-items: center;
   }
+
   /*augmente la taille du nom du site*/
   .titletabaskho {
     font-size: 200%;
@@ -256,14 +259,17 @@ header {
   font-weight: 300;
   margin: 5px;
 }
+
 /* palce un flex qui place en ligne le content*/
 .twoColum {
   display: flex;
   flex-direction: row;
 }
+
 .center {
   text-align: center;
 }
+
 /* le block aucupera 50% du conteneur*/
 .demi {
   width: 50%;
@@ -274,6 +280,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+
 /* utiliser pour le style des article*/
 article {
   color: #f2e4bb;
@@ -282,24 +289,29 @@ article {
   padding: 0.2em;
   border-radius: 20px;
 }
+
 /* placement des image de poster ou d'affiche pour eviter les déformation*/
 .affiche {
   width: 100%;
   border-radius: 20px;
 }
-.photosSaison{
+
+.photosSaison {
   width: 100%;
-  max-width: 270px ;
+  max-width: 270px;
   border-radius: 20px;
 }
-.spacearound{
+
+.spacearound {
   display: flex;
   justify-content: space-around;
 }
+
 hr {
   color: #f2e4bb;
   width: 100%;
 }
+
 /* palce les notes des utilisateur et de la critique bien centrer et de la bonne forme*/
 .notes {
   font-size: 20px;
@@ -310,6 +322,7 @@ hr {
   justify-content: space-around;
   padding-top: 1.2em;
 }
+
 /* dépalce l'image de flamme pour la palcer a coté de la note plus proprement*/
 .iconeflamme {
   position: relative;
@@ -325,7 +338,7 @@ hr {
   justify-content: center;
 }
 
-.listtags{
+.listtags {
   background-color: #f2e4bb;
   border-radius: 20px;
   padding: 8px;
@@ -343,6 +356,7 @@ hr {
 .listderoulant>li {
   background-color: #f2e4bb;
 }
+
 /* palce les images des acteurs*/
 .imagesacteurs {
   border-radius: 5rem;
@@ -358,7 +372,8 @@ hr {
   flex-direction: row;
   justify-content: space-around;
 }
-/* place la petite banniere sur els titre h2*/
+
+/* place la petite banniere sur les titres h2*/
 .banniere {
   display: flex;
   flex-direction: row;
@@ -370,72 +385,78 @@ hr {
   border-radius: 20px;
   padding-left: 20px;
 }
-.banniere > img{
+
+.banniere>img {
   display: block;
 }
 
 figcaption {
   text-align: center;
 }
+
 /* place les incertion de vidéo youtube dans bonne proportion*/
 .youtube {
   width: 100%;
   border-radius: 20px;
 }
-h2 > a{
+
+h2>a {
   color: #f2e4bb;
   text-decoration: none;
 }
-.circle{
+
+.circle {
   border-radius: 50%;
 }
 
-.beige{
+.beige {
   background-color: #f2e4bb;
   margin: 10px;
   border-radius: 10px;
 }
 
-.episode{
+.episode {
   padding: 10px;
 }
 
-.black{
+.black {
   color: #0c0d0b;
 }
 
-.flexwrap{
+.flexwrap {
   display: flex;
   flex-wrap: wrap;
 }
 
-.extraits{
+.extraits {
   min-width: 400px;
   margin: auto;
   padding: 0;
 }
+
 /* media querry*/
 @media screen and (min-width: 620px) {
+
   /* change la taille des margin du main selon la taille de l'écran*/
   main {
     margin: 0 10%;
     padding: 0.5em;
     background-image: linear-gradient(to bottom, #161814, #383d33);
   }
-  
+
   /* change la taille des élement pour s'ajuster a la taille de l'écran*/
   article {
     padding: 1em;
   }
-  
+
   h2 {
     font-size: 25px;
   }
-  
+
   p {
     font-size: 20px;
   }
-  
+
   /* change la taille des acteurs selon la taille de l'écran*/
   .imagesacteurs {
     border-radius: 5rem;
@@ -448,13 +469,14 @@ h2 > a{
 }
 
 @media screen and (min-width: 1000px) {
+
   /* change la taille des margin du main selon la taille de l'écran*/
   main {
     margin: 0 20%;
     padding: 1em;
     background-image: linear-gradient(to bottom, #161814, #383d33);
   }
-  
+
   /* change la taille des acteurs selon la taille de l'écran*/
   .imagesacteurs {
     border-radius: 5rem;
@@ -478,6 +500,7 @@ h2 > a{
     margin: 0;
   }
 
+  /* Disposition des logos pour les réseaux sociaux */
   .FOOTERreseaux {
     display: flex;
     flex-direction: row;
@@ -512,7 +535,7 @@ h2 > a{
     text-align: center;
   }
 
-
+  /* Les auteurs du sites */
   .FOOTERauteur>a {
     color: #0C0D0B;
   }
@@ -533,6 +556,7 @@ h2 > a{
     margin-top: 0;
   }
 
+  /* Changement de la couleur de la barre de séparation */
   footer>hr {
     border-color: #0C0D0B;
     margin: 15px;
@@ -557,10 +581,12 @@ h2 > a{
     margin: 0;
   }
 
+  /* On enlève les réseaux du footer pour en faire un aside */
   .FOOTERreseaux {
     display: none;
   }
 
+  /* Détail du Aside */
   .ASIDEsocial {
     list-style: none;
     position: fixed;
@@ -593,6 +619,8 @@ h2 > a{
     font-size: 24px;
   }
 
+  /* Premier logo */
+
   .ASIDEreseau:nth-child(1)>.ASIDElien:hover>.ASIDEreseaunom {
     width: 180px;
     padding-right: 20px;
@@ -600,6 +628,7 @@ h2 > a{
     transition: all 0.5s ease;
   }
 
+  /* Deuxième logo */
   .ASIDEreseau:nth-child(2)>.ASIDElien:hover>.ASIDEreseaunom {
     width: 180px;
     padding-right: 20px;
@@ -607,6 +636,7 @@ h2 > a{
     transition: all 0.5s ease;
   }
 
+  /* Troisième logo */
   .ASIDEreseau:nth-child(3)>.ASIDElien:hover>.ASIDEreseaunom {
     width: 180px;
     padding-right: 20px;
@@ -614,6 +644,7 @@ h2 > a{
     transition: all 0.5s ease;
   }
 
+  /* Quatrième logo */
   .ASIDEreseau:nth-child(4)>.ASIDElien:hover>.ASIDEreseaunom {
     width: 180px;
     padding-right: 20px;
@@ -621,6 +652,7 @@ h2 > a{
     transition: all 0.5s ease;
   }
 
+  /* Cinquième logo */
   .ASIDEreseau:nth-child(5)>.ASIDElien:hover>.ASIDEreseaunom {
     width: 180px;
     padding-right: 20px;
@@ -628,36 +660,42 @@ h2 > a{
     transition: all 0.5s ease;
   }
 
+  /* Premier logo */
   .ASIDEreseau:nth-child(1):hover .ASIDEicone {
     right: 0px;
     transition: all 1s ease;
     transform: translateX(-205px)
   }
 
+  /* Deuxième logo */
   .ASIDEreseau:nth-child(2):hover .ASIDEicone {
     right: 0px;
     transition: all 1s ease;
     transform: translateX(-205px)
   }
 
+  /* Troisième logo */
   .ASIDEreseau:nth-child(3):hover .ASIDEicone {
     right: 0px;
     transition: all 1s ease;
     transform: translateX(-205px)
   }
 
+  /* Quatrième logo */
   .ASIDEreseau:nth-child(4):hover .ASIDEicone {
     right: 0px;
     transition: all 1s ease;
     transform: translateX(-205px)
   }
 
+  /* Cinquième logo */
   .ASIDEreseau:nth-child(5):hover .ASIDEicone {
     right: 0px;
     transition: all 1s ease;
     transform: translateX(-205px)
   }
 
+  /* Texte du Aside */
   .ASIDEreseau>.ASIDElien>.ASIDEreseaunom {
     width: 0px;
     height: 100%;
